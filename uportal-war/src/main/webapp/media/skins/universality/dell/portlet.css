@@ -1,4 +1,4 @@
-/*
+/**
  * Licensed to Jasig under one or more contributor license
  * agreements. See the NOTICE file distributed with this work
  * for additional information regarding copyright ownership.
@@ -16,27 +16,13 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-(function($) {
-	$.fn.jqmAccordion = function(options) {
-		var settings = $.extend({
-			'categoryShown': 0
-		}, options);	
 
-		function init() {
-			$('li[data-role=list-divider]')
-				.eq(settings.categoryShown)
-				.nextUntil('li[data-role=list-divider]')
-				.css('display', 'block');
-		}
-		init();
-		return this.delegate('.ui-li-divider', 'click', function() {
-			var $this = $(this);
-			if($this.next().is(':visible')) {
-				return;
-			}
-			$('.ui-listview > .ui-li:not(.ui-li-divider)').slideUp(150);
-			$this.nextUntil('.ui-li-divider').slideDown(300);
-		});
-	};
-})( jQuery );
-
+/* uPORTAL PORTLET STYLE CSS
+ * Default portlet styling for uPortal is provided via
+ * \uportal-war\src\main\webapp\media\skins\universality\common\css\portlet.css
+ * This file is provided to override/extend the default styling for a specific skin.
+ * If you are satisfied with the default styling, this file may remain blank.
+ * Otherwise, add any CSS to style portlets as desired.
+ */
+ 
+.ui-datepicker-inline { display: block; }

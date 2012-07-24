@@ -1,0 +1,46 @@
+.up {
+	#portalPageHeader {
+		background: white;
+		
+		#portalLogo {
+			padding-bottom: 0;
+		}
+		
+		#portalPageBar {
+			#portalPageBarLinks {
+				.utilities {
+					li {
+						border-right: 1px solid black;
+						
+						&:last-child {
+							border: none;
+						}
+					}
+				}
+			}
+		}
+		
+		#webSearchContainer {
+			.fl-widget-inner {
+				position: relative;
+				
+				#webSearchForm {
+					#webSearchInput {
+						width: 250px;
+						padding-right: 30px;
+					}
+					#webSearchSubmit {
+						position: absolute;
+						top: 8px;
+						right: 6px;
+						background: url(images/search_field_button.gif) no-repeat;
+						width: 14px;
+						height: 16px;
+						text-indent: -999em;
+						border: none;
+					}
+				}
+			}
+		}
+	}
+}

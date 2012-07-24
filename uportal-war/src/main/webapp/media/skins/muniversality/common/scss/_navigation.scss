@@ -19,7 +19,7 @@
 /*====================================*/
 /* NAVIGATION */
 /*====================================*/
-/* 
+/**
  * Styles specific to navigation.
  */
 @import "colors";
@@ -55,7 +55,8 @@
 					margin-bottom: 3px;
 				}
 				.title {
-					
+					color: #444444;
+					text-shadow: none;
 				}
 				.badge {
 					position: absolute;

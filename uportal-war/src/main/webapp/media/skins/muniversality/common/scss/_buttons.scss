@@ -21,7 +21,20 @@
  * no color classes needed in the markup.
  * Pass in the desired type of button based on the context.
  */
-
+/* dell portal-nav */
+@mixin dell-portal-nav {
+	border-color	: #014A90;
+	background		: $c3;
+	color			: $white;
+	@include gradient(darken(#3791C9, 5%), darken(#014A90, 5%));
+	-webkit-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.95);
+	-moz-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.95);
+	box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.95);
+	border-bottom: solid 1px rgba(255, 255, 255, 0.10);
+	a.ui-link-inherit {
+		color		: $white;
+	}
+}
 /* Use variables to store multiple jQM selectors. */
 $btn-up-selector	: ".ui-btn-up-a, .ui-btn-up-b, .ui-btn-up-c, .ui-btn-up-d, .ui-btn-up-e";
 $btn-hover-selector	: ".ui-btn-hover-a, .ui-btn-hover-b, .ui-btn-hover-c, .ui-btn-hover-d, .ui-btn-hover-e";
@@ -45,13 +58,7 @@ $btn-active-selector: ".ui-btn-active";
 @mixin button-up($type) {
 	
 	@if $type == portal-nav {
-		border-color	: $c3darker;
-		background		: $c3;
-		color			: $white;
-		@include gradient($c3, $c3darker);
-		a.ui-link-inherit {
-			color		: $white;
-		}
+		@include dell-portal-nav;
 	} @else if $type == portlet-nav {
 		border-color	: $c1darker;
 		background		: $c1;
@@ -85,13 +92,7 @@ $btn-active-selector: ".ui-btn-active";
 @mixin button-hover($type) {
 	
 	@if $type == portal-nav {
-		border-color	: $c3darker;
-		background		: $c3light;
-		color			: $white;
-		@include gradient($c3light, $c3dark);
-		a.ui-link-inherit { 
-			color		: $white;
-		}
+		@include dell-portal-nav;
 	} @else if $type == portlet-nav {
 		border-color	: $c3darker;
 		background		: $c1light;

@@ -1,0 +1,454 @@
+/*
+Author: Chris Paraiso
+background:		#1d2028
+article text color: 	#6f727a
+font-family: "Museo 500","Helvetica Neue",Arial,sans-serif;
+*/
+
+body {
+	background: #1d2028 url(../images/blue-green-trimmed.jpg) top center no-repeat;
+	color: white;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.75px;
+}
+
+#page {
+	background: url(../images/content-bg.jpg) 0px 700px no-repeat; 
+	overflow: hidden;
+}
+
+section {
+	overflow: hidden;	
+}
+
+nav {
+	background: url(../images/bar.png) repeat-x;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 68px;
+	line-height: 42px;
+	/*border-bottom: solid 1px #323745;*/
+	font-size: 1em;
+	z-index: 1;
+}
+
+nav .nav-container {
+	width: 950px;
+	margin: 0 auto;
+	/* overflow: hidden; */
+}
+
+nav ul {
+	float: right;
+}
+
+nav ul li {
+	float: left;
+	width: 180px;
+	height: 68px;
+	text-align: center;
+	line-height: 42px;
+}
+
+nav a:link {
+	text-decoration: none;
+	color: #a0a4b0;
+	display: block;
+	height: 68px;
+
+}
+nav a:visited {
+	text-decoration: none;
+}
+nav a:hover {
+	color: white;
+}
+
+nav a:active {
+	color: white;
+}
+
+li.selected {
+	background: url(../images/selected-item.png) no-repeat;
+	color: white;
+}
+
+li.selected a {
+	color: white;	
+}
+
+#page {
+	width: 950px;
+	margin: 0 auto;
+	margin-bottom: 1em;
+}
+
+header#main-header {
+	height: 150px;
+	margin-top: 10em;
+	margin-bottom: 5em;
+}
+
+#main-header h1 {
+	position: fixed;
+	z-index: 2;
+	top: 10px;
+}
+
+#title, #tagline {
+	display: block;
+}
+
+#tagline {
+	margin-left: 70px;
+	height: 122px;
+	width: 867px;
+	background: url(../images/tagline.png) no-repeat;
+	text-indent:-9000px;
+}
+
+header#main-header p {
+	float: right;
+	margin-top: 3em;
+	margin-right: 5px;
+	display: inline;
+	width: 470px;
+}
+
+#selected-work, #logo {
+	overflow: hidden;
+}
+
+#selected-work figure {
+	background: url(../images/bg-box.png);
+	width: 300px;
+	float: left;
+	margin: 0 20px 20px 0;
+	color: #6f727a;
+	padding-bottom: 7px;
+	position: relative;
+}
+
+#selected-work figcaption {
+	position: absolute;
+	bottom: 9px;
+	left: 10px;
+	display: none;
+	color: white;
+	background: black;
+	width: 260px;
+	font-size: 0.85em;
+	padding: 10px;
+	height: 137px;
+	line-height: 1.2em;
+}
+
+#selected-work figcaption a {
+	text-align: center;
+}
+
+#selected-work section figure:nth-child(3n) {
+	margin-right: 0;	
+}
+#selected-work figure {
+	position: relative;
+}
+
+#selected-work figure img {
+	padding: 10px 0 0 10px;
+}
+
+#me {
+    width: 610px;
+    float: left;
+}
+
+.about-images {
+    margin-bottom: 1.4em;
+}
+
+#me img {
+	width: 610px;
+	height: 49px;
+}
+
+#services {
+    width: 300px;
+    float: right;
+	margin-bottom: 20px;
+}
+
+#services li {
+    background: url(../images/bg-box.png);
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    margin-bottom: 2px;
+    display: block;
+    padding-left: 18px;
+}
+
+#process {
+    clear: both;
+}
+
+#process section {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+}
+
+#process section:nth-child(3n) {
+    margin-right: 0;
+}
+#contact {
+	clear: both;
+}
+#contact form {
+	width: 900px;
+	float: left;
+	margin-bottom: 1em;
+}
+
+label, input, textarea {
+	display: block;
+	padding: 0;
+}
+
+input, textarea {
+	width: 720px;
+	float: left;
+	-moz-border-radius: 5px;
+	background: url(../images/bg-box.png);
+	border: none;
+	margin-bottom: 0.75em;
+}
+
+label {
+	height: 42px;
+	line-height: 42px;
+	float:left;
+	width: 150px;
+	margin-bottom: 0.5em;
+	clear: left;
+}
+
+textarea {
+	height: 12em;
+	margin-top: 0;
+}
+
+legend {
+	display: none;
+}
+
+#contact aside {
+	float: right;
+}
+
+#contact aside li {
+	list-style: none;
+}
+#portfolio-info {
+	clear: both;
+}
+
+
+footer {
+	/*background: url(../images/footer-bg.jpg) center bottom no-repeat;*/
+	height: 64px;
+	margin-bottom: 5em;
+}
+
+footer section {
+	width: 100%;
+}
+
+footer section p {
+	
+}
+
+
+#footer-container {
+	width: 950px;
+	margin: 0 auto;
+	
+	overflow: hidden;
+}
+
+.badge {
+	display: block;
+	float: right;
+}
+
+.copyright {
+	float: left;
+	line-height: 64px;
+	font-size: 12px;
+	letter-spacing: 0px;
+}
+
+
+button {
+	width: 130px;
+	height: 41px;
+	background: url(../images/send.png) no-repeat;
+	border: none;
+	text-indent: -9999px;
+	float: right;
+}
+
+button:hover {
+	cursor: pointer;
+	background: url(../images/send-hover.png) no-repeat;
+}
+
+hr {
+	border: 0;
+	background: url(../images/hr.png);
+	width: 940px;
+	height: 22px;
+}
+
+.screenshot {
+	display: block;
+	width: 135px;
+	height: 29px;
+	background: url(../images/view-screenshot.png) no-repeat;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;;
+	text-indent: -9000px;
+}
+
+#resume {
+	overflow: hidden;
+	margin: 1.4em 0;
+}
+
+#resume li {
+	list-style: none;
+	margin-bottom: 1.4em;
+	float: left;
+	margin-right: 1.4em;
+}
+#resume li img {
+	width: auto;
+	height: auto;
+}
+/******************************************** typography **********************************************/
+
+@font-face {
+	font-family: 'Museo 300';
+	src: url(../fonts/Museo300-Regular.eot);
+	src: local('Museo 300'), local('Museo300-Regular'), url(../fonts/Museo300-Regular.woff) format('woff'), url(../fonts/Museo300-Regular.otf) format('opentype');
+}
+
+@font-face {
+	font-family: 'Museo 500';
+	src: url(../fonts/Museo500-Regular.eot);
+	src: local('Museo 500'), local('Museo500-Regular'), url(../fonts/Museo500-Regular.woff) format('woff'), url(../fonts/Museo500-Regular.otf) format('opentype');
+}
+@font-face {
+	font-family: 'Museo 700';
+	src: url(../fonts/Museo700-Regular.eot);
+	src: local('Museo 700'), local('Museo700-Regular'), url(../fonts/Museo700-Regular.woff) format('woff'), url(../fonts/Museo700-Regular.otf) format('opentype');
+}
+
+nav header {
+	display: none;	
+}
+
+p, ul, ol {
+	/*color: #7c7f88;	*/
+	color: #afb2b7;
+	line-height: 1.4em;
+	margin-bottom: 1.4em;
+	text-shadow: 1px 1px 1px #000;
+}
+
+#services ul {
+	margin-bottom: 0;	
+}
+
+label, textarea, input {
+	color: #afb2b7;
+}
+
+label {
+	text-shadow: 1px 1px 1px #000;
+}
+input {
+	padding: 1em;
+}
+
+textarea {
+	padding: 1em;
+	
+}
+
+* html textarea {
+	margin: 0.75em 0;	
+}
+
+footer {
+	color: #6f727a;	
+}
+
+a:link {
+	color: #8ac0c5;	
+}
+
+a:hover {
+	color: #fff;	
+}
+
+a:visited {
+	color: #6f727a;
+}
+
+a:active {
+	color: #ff0000;	
+}
+
+header h1, #me header h1 {
+    font-family: "Museo 500","Helvetica Neue",Arial,sans-serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    letter-spacing: -2px;
+    text-shadow: 1px 1px 0 #000;
+}
+
+#me h1 {
+	font-family: "Museo 300","Helvetica Neue",Arial,sans-serif;
+	font-size: 1.5em;
+	letter-spacing: -1px;
+}
+#main-header h1 {
+	font-size: 1.5em;
+	letter-spacing: 0;
+}
+
+header {
+    margin-bottom: 1.4em;
+}
+
+hr {
+    margin-bottom: 20px;
+    clear: both;
+}
+#process header {
+    margin-bottom: 0.5em;
+    font-size: 0.75em;
+}
+
+#process {
+    font-size: 0.85em;
+}
+
+*:focus {
+	outline: none;	
+}

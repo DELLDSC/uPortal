@@ -104,6 +104,7 @@
         <filters.file>filters/${env}.properties</filters.file>
     
         <!-- WAR Dependency Version Properties -->
+        <Announcements.version>1.1.0-SNAPSHOT</Announcements.version>
         <BookmarksPortlet.version>1.0.11</BookmarksPortlet.version>
         <CalendarPortlet.version>2.1.0-RC1</CalendarPortlet.version>
         <CampusLifePortlets.version>1.0.0-RC2-SNAPSHOT</CampusLifePortlets.version>

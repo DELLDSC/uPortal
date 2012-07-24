@@ -46,7 +46,7 @@
 		border: 1px solid $c1dark;
 		color: $white;
 		text-shadow: 0 1px 0 $black;
-		background: $bgc url("images/bg_320x480_flat.png") 0 25px no-repeat;
+		background: $bgc;
 		
 		.ui-link-inherit { color: $white; }
 		.ui-link { 
@@ -61,8 +61,7 @@
 		border: 1px solid $gray;
 		color: $text;
 		text-shadow: 0 1px 0 $white;
-		background: $graylighter;
-		@include gradient($graylightest, $graylighter);
+		background: $bgc;
 	}
 	
 	.portlet-wrapper-titlebar {
@@ -70,9 +69,22 @@
 		background		: $c2;
 		color			: $white;
 		@include text-shadow();
-		@include gradient($c2light, $c2dark);
-		
+		@include gradient(#3791C9, #014A90);
 		@include button(portal-nav);
+		.title {
+			text-indent: -999em;
+			background: url(images/dell-logo.png) top center no-repeat;
+			display: block;
+			height: 35px;
+			width: 35px;
+			margin: 0 auto;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		
+		.ui-btn-right, .ui-btn-left {
+			top: 1em;
+		}
 	}
 	
 	.portlet-titlebar {
@@ -81,7 +93,6 @@
 		color			: $white;
 		@include text-shadow();
 		@include gradient($c1, $c1darker);
-		
 		@include button(portlet-nav);
 	}
 	
@@ -98,7 +109,6 @@
 		}
 		
 		@include button();
-		
 		.ui-li {
 			@include gradient(#fcfcfc, #ededed);
 		}
@@ -158,6 +168,13 @@
 		.ui-icon-phone {
 			background-image: url(images/icons/phone-36x36.png);
 			background-size: 18px 18px;
+		}
+		
+		.portlet-wrapper-titlebar {
+			.title {
+				background: url(images/dell-logo-retina.png) top center no-repeat;
+				background-size: 35px 35px;
+			}
 		}
 	}
 }
